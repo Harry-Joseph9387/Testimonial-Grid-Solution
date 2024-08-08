@@ -10,7 +10,7 @@
 .main{
     font-family:"Barlow Semi Condensed", sans-serif;
     padding:50px 30px;
-    height:100vh;
+    
     background-color:hsl(0, 0%, 90%);
     gap:30px;
     display: flex;
