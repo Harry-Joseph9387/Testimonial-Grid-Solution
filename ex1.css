@@ -1,0 +1,118 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=League+Spartan:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+    
+.main{
+    font-family:"Barlow Semi Condensed", sans-serif;
+    padding:50px 30px;
+    height:100vh;
+    background-color:hsl(0, 0%, 90%);
+    gap:30px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+
+.left{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    flex-wrap: wrap;
+}
+.profile{
+    display:flex;
+    align-items: center;
+    /* width: 100%; */
+}
+.left-top,.left-bottom{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+.profile img{
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-right: 15px;;
+}
+
+.test .profile h2{
+    color:white;
+    font-weight: 500;
+    margin-bottom:2px;
+    font-size: medium;
+}
+.profile p{
+    color:rgba(255, 255, 255, 0.612);
+    font-size: small;
+}
+.test h2{
+    color:white;
+    font-weight:700;
+    font-size: 18px;
+}
+.test p{
+    color:hsl(0, 0%, 81%);
+    line-height: 20px;
+}
+.test1{
+    background-color:hsl(263, 55%, 52%);
+    position: relative;
+    padding-right:50px;
+}
+.test2{
+    background-color: hsl(217, 19%, 35%);
+    /* flex-basis: 45%; */
+}
+.test2 p{
+    color:hsl(0, 0%, 81%);
+}
+.test3{
+    background-color:white;
+    /* flex-basis:45%; */
+}
+
+.test4{
+    background-color: hsl(219, 29%, 14%);
+}
+.test5{
+    background-color:white;
+}
+.test{
+    padding:20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+}
+.test3 .profile h2 ,.main .test3 h2,.test5 .profile h2{
+    color: hsl(217, 19%, 35%);
+    font-size: medium;
+}
+.test3 .profile p,.test5 .profile p{
+    color:hsl(217, 19%, 35%);
+    font-size: small;
+}
+.main .test3 p,.main .test5 p,.main .test5 h2{
+    color:hsl(217, 19%, 35%);
+} 
+
+@media(min-width:1024px){
+    .main{
+        /* padding:100px 30px; */
+        flex-direction: row;
+        /* height: ; */
+    }
+    
+    .left-top,.left-bottom{
+        flex-direction: row;
+    }
+    .test5{
+        flex-basis: 100%;
+    }
+}
